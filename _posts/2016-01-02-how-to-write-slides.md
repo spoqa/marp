@@ -9,7 +9,7 @@ category: top
 
 The text format is based on [Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/){:target="_blank"}.
 
-Marp uses the horizontal ruler to create multi-page slides. You can split page of slides by `---` between empty lines. This format is similar to [Deckset](http://www.decksetapp.com/){:target="_blank"}.
+Marp uses the horizontal ruler to create multi-page slides. A `---` between empty lines splits the presentation into slides. This format is similar to [Deckset](http://www.decksetapp.com/){:target="_blank"}.
 
 [Show example.md&ensp;<i class="fa fa-external-link" aria-hidden="true"></i>](https://raw.githubusercontent.com/yhatt/marp/master/example.md){:target="_blank" class="btn btn-primary"}
 
