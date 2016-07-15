@@ -13,21 +13,21 @@ Marp's Markdown has extended directives to affect slides. Insert HTML comment as
 
 ## Pagination
 
-Want you pagination? Insert `<!-- page_number: true -->` to top.
+You want pagination? Insert `<!-- page_number: true -->` at the top.
 
-If you want to exclude first page number, move directive to after first ruler.
+If you want to exclude the first page number, move the directive to after the first ruler.
 
 ```markdown
 # First page
 
-The page number `1` can not see.
+The page number `1` is not shown.
 
 ---
 <!-- page_number: true -->
 
 # Second page
 
-The page number `2` can see!
+The page number `2` is shown!
 ```
 
 </div>
@@ -35,22 +35,22 @@ The page number `2` can see!
 
 ## Resize slide
 
-You can resize slide by Global Directive `$size`.
+You can resize slides with the Global Directive `$size`.
 Insert `<!-- $size: 16:9 -->` if you want to display slides on 16:9 screen. That’s all!
 
 ```html
 <!-- $size: 16:9 -->
 ```
 
-`$size` directive supports `4:3`, `16:9`, `A0`-`A8`, `B0`-`B8` and suffix of `-portrait`.
+`$size` directive supports `4:3`, `16:9`, `A0`-`A8`, `B0`-`B8` and the `-portrait` suffix.
 
-Marp also supports `$width` and `$height` directives to set custom size.
+Marp also supports `$width` and `$height` directives to set a custom size.
 
 </div>
 <div class="col-xs-12" markdown="1">
 
 ---
 
-Want you the example? Let's see [example.md](https://raw.githubusercontent.com/yhatt/marp/master/example.md){:target="_blank"}.
+You want an example? Have a look at [example.md](https://raw.githubusercontent.com/yhatt/marp/master/example.md){:target="_blank"}.
 
 </div>
