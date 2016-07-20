@@ -1,0 +1,114 @@
+@import './markdown'
+@import './spoqa/colors'
+@import './spoqa/logo'
+@import '../../node_modules/highlight.js/styles/github'
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css")
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css")
+
+
+$highlight: $mainblue-0
+
+
+=color-template($bg, $text)
+  color: $text
+
+  > .slide
+    background-color: $bg
+
+  a
+    color: rgba($text, .8)
+
+  code
+    background: rgba($text, .8)
+    color: $bg
+
+  pre
+    background-color: $text
+
+    code
+      background: transparent
+
+
++body-slide-mode
+  font-size: 91.25%
+
+  .slide_page
+    font-size: 24px
+
+  .slide_footer
+    opacity: .75
+    font-size: 18px
+    color: $grey-5
+
+  .markdown-body
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif
+    font-size: 29px
+    line-height: 1.3
+
+    tt, code
+      font-family: 'SourceHanCodeJP-Normal', 'Ricty', Consolas, "Liberation Mono", Menlo, Courier, monospace
+
+  .slide_wrapper
+    > .slide
+      padding: calc(0.1px * var(--slide-height)) calc(0.05px * var(--slide-width))
+      background-image: $spoqa-logo-color;
+      background-size: auto 3%;
+      background-origin: content-box;
+      background-position: 0 108%;
+      background-repeat: no-repeat;
+
+    &.only-headings > .slide
+      justify-content: center;
+      background-size: auto 8%;
+      background-position: 0 0;
+
+    h1
+      font-size: 1.6em
+      color: $highlight
+      border-bottom: none
+      &:first-child
+        padding-bottom: 10px
+        border-bottom: 3px solid $highlight
+    h2
+      font-size: 1.3em
+      color: $highlight
+      font-weight: normal
+      border-bottom: none
+      &:first-child
+        padding-bottom: 10px
+        border-bottom: 2px solid $grey-5
+    h3
+      font-size: 1.1em
+      font-weight: 100
+    h4
+      font-size: 1.05em
+    h5
+      font-size: 1em
+    h6
+      font-size: 0.9em
+
+    code
+      display: inline-block
+      padding: 0.1em 0.2em
+      margin: -0.1em 0.05em
+      letter-spacing: 0
+      font-size: 0.75em
+      vertical-align: baseline
+
+    pre
+      line-height: 1.15
+      overflow: auto
+
+      code
+        display: block
+        margin: 0
+        padding: 0.5em 0.75em
+        font-size: 0.7em
+
+    mark
+      color: $highlight
+
+    +color-template(white, $grey-7)
+
+    &[data-template~="invert"]
+      +color-template($grey-8, $grey-2)

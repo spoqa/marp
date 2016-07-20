@@ -261,6 +261,13 @@ module.exports = class MdsMainMenu
               checked: @states.theme == 'gaia'
               click: => @window.mdsWindow.send 'setTheme', 'gaia' unless @window.mdsWindow.freeze
             }
+            {
+              label: '&Spoqa'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'spoqa'
+              click: => @window.mdsWindow.send 'setTheme', 'spoqa' unless @window.mdsWindow.freeze
+            }
           ]
 
     @applyMenu()
